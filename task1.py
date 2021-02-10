@@ -1,6 +1,7 @@
 list = [1,'Betty',1.3,'puppy',3,-3,True,None]
-for i in range (len(list)-1):
+for i in range (len(list)):
     print("Элемент списка",list[i]," является ",type(list[i]))
-for i in list:
-    print("Элемент списка",i," является ",type(i))
+
+for idx, value in enumerate(list):
+    print(f"Элемент {idx} списка {value} является ",type(value))
 
